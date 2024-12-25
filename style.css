@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #001f3f;
+  }
+  
+  header {
+    background-color: #001030;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-family: "Maven Pro", serif;
+  }
+  
+  nav a:hover {
+    color: #1e90ff;
+  }
+  
+  section {
+    padding: 80px 20px 20px;
+    min-height: 100vh;
+  }
+  
+  .section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Maven Pro", serif;
+  }
+  
+  #inicio {
+    position: relative; /* Necesario para la imagen de fondo */
+    background-image: url('images/fondo1.jpg'); /* Añadimos la imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen de fondo se quede fija al hacer scroll */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Asegura que el texto se centre */
+}
+
+#inicio::before {
+    content: ''; /* Crea un pseudo-elemento para la capa oscura */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+    z-index: 0; /* Pone la capa oscura detrás del contenido */
+}
+
+#inicio .section-container {
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+    color: #fff; /* Asegura que el texto sea blanco y legible */
+}
+
+#inicio h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra al texto para mejorar la legibilidad */
+}
+
+#inicio p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Añade sombra al texto para mejorar la legibilidad */
+}
+
+  
+  .Caja1 {
+    background-color: white; /* Fondo blanco */
+    color: #333; /* Color de texto oscuro para buen contraste */
+    padding: 20px; /* Espaciado interno para que el texto no quede pegado al borde */
+    border-radius: 8px; /* Bordes redondeados para un diseño más suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    max-width: 800px; /* Máximo ancho para evitar que se estire demasiado */
+    margin: 0 auto; /* Centra la caja en la pantalla */
+    text-align: left;
+}
+
+h2 {
+    font-family: "Maven Pro", serif;
+}
+
+p {
+    font-family: "Lexend", serif;
+}
+
+
+#skills {
+  padding: 80px 20px 20px;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Esto permite que los elementos se acomoden cuando no hay suficiente espacio */
+  margin-top: 30px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Puedes ajustar el tamaño de cada div */
+  text-align: center;
+}
+
+.skill-icon {
+  width: 80px; /* Ajusta el tamaño del icono */
+  height: 80px; /* Mantiene la proporción del icono */
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1em;
+  margin: 0;
+  color: #ffffff; /* Color para el texto */
+  font-family: "Maven Pro", serif;
+}
+
+
+
+
+
+
+  #sobre-mi {
+    background-color: #002b5c;
+  }
+  
+  #proyectos {
+    background-color: #004080;
+  }
+  
+  #skills {
+    background-color: #003f5c;
+  }
+  
+  #contacto {
+    background-color: #002147;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001030;
+    color: #fff;
+    position: relative;
+  }
